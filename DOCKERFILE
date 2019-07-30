@@ -1,0 +1,3 @@
+FROM samuelebistoletti/docker-statsd-influxdb-grafana:latest 
+COPY mydash.json /var/lib/grafana/dashboards/ 
+COPY dashboardReference.yml /etc/grafana/provisioning/dashboards/ 
