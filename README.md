@@ -11,3 +11,18 @@ When you make edits to the dashboards export the changes as described [here](htt
 The .linq file is a LinqPad script (windows only) which generates data to show on the dashboards.
 
 
+
+## Setup Datasource
+
+Add data source on Grafana
+Using the wizard click on Add data source
+Choose a name for the source and flag it as Default
+Choose InfluxDB as type
+Choose direct as access
+Fill remaining fields as follows and click on Add without altering other fields
+Url: http://localhost:8086
+Database:    telegraf
+User: telegraf
+Password:    telegraf
+
+From [here](https://hub.docker.com/r/samuelebistoletti/docker-statsd-influxdb-grafana)
